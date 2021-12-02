@@ -41,13 +41,13 @@
 #endif
 
 #else
-#include "nimble/ext/tinycrypt/include/tinycrypt/aes.h"
-#include "nimble/ext/tinycrypt/include/tinycrypt/constants.h"
-#include "nimble/ext/tinycrypt/include/tinycrypt/utils.h"
+#include "tinycrypt/aes.h"
+#include "tinycrypt/constants.h"
+#include "tinycrypt/utils.h"
 
 #if MYNEWT_VAL(BLE_SM_SC)
-#include "nimble/ext/tinycrypt/include/tinycrypt/cmac_mode.h"
-#include "nimble/ext/tinycrypt/include/tinycrypt/ecc_dh.h"
+#include "tinycrypt/cmac_mode.h"
+#include "tinycrypt/ecc_dh.h"
 #if MYNEWT_VAL(TRNG)
 #include "trng/trng.h"
 #endif
